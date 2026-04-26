@@ -1,0 +1,143 @@
+import type { SkillCategory } from "@/content/types";
+
+export const skillCategories: SkillCategory[] = [
+  {
+    title: "Frontend Architecture",
+    intro:
+      "Builds scalable React and Next.js systems that stay understandable as products and teams grow.",
+    skills: [
+      "React",
+      "Next.js",
+      "TypeScript",
+      "JavaScript",
+      "SSR",
+      "SSG",
+      "ISR",
+      "React Server Components",
+      "SWC",
+      "Performance optimization",
+      "Responsive UI",
+      "Accessibility",
+    ],
+    proof: ["Reolink / Neoxi", "JamLoop", "Shop-Ware", "Mojito Mint", "Coffee / Uniplato"],
+  },
+  {
+    title: "Design Systems and UI",
+    intro:
+      "Turns design intent into reusable, production-grade UI patterns with consistent implementation discipline.",
+    skills: [
+      "Storybook",
+      "Tailwind CSS",
+      "shadcn/ui",
+      "Material UI",
+      "Ant Design",
+      "styled-components",
+      "Sass",
+      "Figma",
+      "Adobe XD",
+    ],
+    proof: ["JamLoop", "Shop-Ware", "Coffee / Uniplato", "Satek", "Mojito Mint"],
+  },
+  {
+    title: "Data and State",
+    intro:
+      "Uses the right state boundary for the job, from server data and caching to local product workflows and typed transport contracts.",
+    skills: [
+      "React Query",
+      "Redux Toolkit",
+      "Zustand",
+      "SWR",
+      "REST",
+      "GraphQL",
+      "Apollo Client",
+      "GraphQL Code Generator",
+      "Typed API integrations",
+    ],
+    proof: ["Reolink / Neoxi", "JamLoop", "Mojito Mint", "Coffee / Uniplato", "Dojeldi"],
+  },
+  {
+    title: "Authentication and Security",
+    intro:
+      "Comfortable building secure identity flows that balance product UX with operational reliability.",
+    skills: [
+      "Ory Kratos",
+      "NextAuth",
+      "Clerk",
+      "Auth0",
+      "MFA",
+      "Passkeys",
+      "Twilio Verify",
+      "Resend",
+      "JWT",
+      "Rate limiting",
+      "Security headers",
+      "CSP",
+      "HSTS",
+      "CORS",
+    ],
+    proof: ["Reolink / Neoxi", "JamLoop", "Mojito Mint", "I Read"],
+  },
+  {
+    title: "Testing and Quality",
+    intro:
+      "Ships with confidence by combining browser automation, component tests, and quality gates that scale with product complexity.",
+    skills: [
+      "Playwright",
+      "Vitest",
+      "Jest",
+      "React Testing Library",
+      "Cypress",
+      "Visual regression",
+      "Percy",
+      "Codecov",
+      "Storybook testing",
+    ],
+    proof: ["JamLoop", "Reolink / Neoxi", "Shop-Ware", "Mojito Mint", "TDD / Playwright Automation"],
+  },
+  {
+    title: "Build and Delivery",
+    intro:
+      "Improves developer feedback loops and release confidence through practical tooling, package architecture, and CI design.",
+    skills: [
+      "GitHub Actions",
+      "CircleCI",
+      "Webpack",
+      "Vite",
+      "Docker",
+      "Kubernetes",
+      "Turborepo",
+      "pnpm",
+      "Yarn workspaces",
+      "Netlify",
+      "Vercel",
+      "Heroku",
+      "Semantic Release",
+    ],
+    proof: ["Reolink / Neoxi", "JamLoop", "Shop-Ware", "Mojito Mint", "Coffee / Uniplato", "Infrastructure as Code"],
+  },
+  {
+    title: "Observability",
+    intro:
+      "Treats frontend monitoring as a product reliability tool rather than a post-release add-on.",
+    skills: ["Sentry", "Datadog", "Better Stack", "Pino", "PostHog", "New Relic"],
+    proof: ["JamLoop", "Reolink / Neoxi", "Shop-Ware", "Mojito Mint", "Coffee / Uniplato"],
+  },
+  {
+    title: "Full-stack and Infrastructure",
+    intro:
+      "Comfortable owning the backend-adjacent and deployment concerns that make frontend systems work in production.",
+    skills: [
+      "Node.js",
+      "NestJS",
+      "Express",
+      "TypeORM",
+      "PostgreSQL",
+      "Redis",
+      "Terraform",
+      "Docker Compose",
+      "PM2",
+      "AWS S3",
+    ],
+    proof: ["I Read", "Infrastructure as Code", "Reolink / Neoxi", "Shop-Ware", "Mojito Mint"],
+  },
+];
