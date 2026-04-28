@@ -12,14 +12,14 @@ export const featuredCaseStudySlugs = [
 export const caseStudies: CaseStudy[] = [
   {
     slug: "reolink-neoxi",
-    name: "Realink",
+    name: "Reolink",
     company: "Neoxi",
     role: "Senior Frontend Engineer",
     period: "2024 to present",
     productType: "Secure cloud platform and marketing/cloud monorepo",
     domain: "Enterprise SaaS / Security",
     summary:
-      "Built and standardized a secure Next.js 15 monorepo that supports Realink cloud and marketing surfaces with shared packages, localization, and modern authentication flows.",
+      "Built and standardized a secure Next.js 15 monorepo that supports Reolink cloud and marketing surfaces with shared packages, localization, and modern authentication flows.",
     stack: [
       "Next.js 15",
       "React 19",
@@ -71,7 +71,7 @@ export const caseStudies: CaseStudy[] = [
       context: {
         title: "Context",
         body: [
-          "Realink needed a frontend platform that could support both cloud product surfaces and marketing experiences without fragmenting implementation patterns across teams.",
+          "Reolink needed a frontend platform that could support both cloud product surfaces and marketing experiences without fragmenting implementation patterns across teams.",
           "The work sat at the intersection of product delivery, platform consistency, localization, and authentication hardening.",
         ],
       },
@@ -486,7 +486,7 @@ export const caseStudies: CaseStudy[] = [
       screenshots: { title: "Screenshots placeholder", body: ["Reserved for desktop healthcare flows and mobile screens where product imagery can be shared safely."] },
       lessonsLearned: { title: "Lessons learned", body: ["Cross-platform delivery benefits from clear UX conventions more than from piling on platform-specific customization.", "Mentoring raises overall team throughput when it is tied directly to real product work instead of abstract training."] },
     },
-    relatedProjectSlugs: ["coffee", "english-training-app-for-kids", "airport-management-algorithm"],
+    relatedProjectSlugs: ["coffee", "english-training-app-for-kids", "atmosphere"],
   },
 ];
 

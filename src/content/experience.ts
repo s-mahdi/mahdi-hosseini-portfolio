@@ -7,7 +7,7 @@ export const experience: ExperienceEntry[] = [
     period: "2024 to present",
     location: "Remote",
     stack: ["Next.js 15", "React 19", "TypeScript", "Ory Kratos", "Turborepo"],
-    outcomes: ["Implemented Realink, Jamloop, and Mojito Mint project surfaces", "Reduced duplicated configuration by 60%"],
+    outcomes: ["Implemented Reolink, Jamloop, and Mojito Mint project surfaces", "Reduced duplicated configuration by 60%"],
     caseStudySlug: "reolink-neoxi",
   },
   {
@@ -31,7 +31,7 @@ export const experience: ExperienceEntry[] = [
   {
     company: "Satek / Dadeh Kavan",
     role: "Frontend Engineer",
-    period: "2019 to 2021",
+    period: "2020 to 2022",
     location: "On-site / Hybrid",
     stack: ["React", "Electron", "React Native", "Apollo"],
     outcomes: ["Shipped 4 Electron desktop apps", "Improved workflow efficiency by 35%"],
@@ -39,10 +39,10 @@ export const experience: ExperienceEntry[] = [
   },
   {
     company: "Earlier projects and university work",
-    role: "Frontend and software engineering projects",
-    period: "Before 2019",
+    role: "Android and software engineering projects",
+    period: "University projects",
     location: "Iran",
-    stack: ["React", "Algorithms", "Mobile"],
-    outcomes: ["Built archive projects across education and algorithmic domains", "Established the foundation for later product and platform work"],
+    stack: ["Android", "Kotlin", "Java"],
+    outcomes: ["Built early Android education and weather apps", "Established the foundation for later product and platform work"],
   },
 ];

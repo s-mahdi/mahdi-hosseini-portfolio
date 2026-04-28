@@ -31,5 +31,5 @@ export const proofMetrics: Metric[] = [
   { value: "80%", label: "Higher deployment frequency", evidence: "Improved delivery confidence through CI, testing, and reusable UI foundations." },
   { value: "4", label: "Electron desktop apps shipped", evidence: "Delivered in healthcare and collaboration product environments." },
   { value: "1,000+", label: "Automated tests in CI", evidence: "Shop-Ware and related frontend quality workflows." },
-  { value: "2 + 7", label: "Next.js apps and shared packages", evidence: "Realink Turborepo monorepo footprint at Neoxi." },
+  { value: "2 + 7", label: "Next.js apps and shared packages", evidence: "Reolink Turborepo monorepo footprint at Neoxi." },
 ];

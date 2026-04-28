@@ -19,7 +19,13 @@ export const skillCategories: SkillCategory[] = [
       "Responsive UI",
       "Accessibility",
     ],
-    proof: ["Realink", "Jamloop", "Shop-Ware", "Mojito Mint", "Coffee / Uniplato"],
+    proof: [
+      "Reolink",
+      "Jamloop",
+      "Shop-Ware",
+      "Mojito Mint",
+      "Coffee / Uniplato",
+    ],
   },
   {
     title: "Design Systems and UI",
@@ -36,7 +42,13 @@ export const skillCategories: SkillCategory[] = [
       "Figma",
       "Adobe XD",
     ],
-    proof: ["Jamloop", "Shop-Ware", "Coffee / Uniplato", "Satek", "Mojito Mint"],
+    proof: [
+      "Jamloop",
+      "Shop-Ware",
+      "Coffee / Uniplato",
+      "Satek",
+      "Mojito Mint",
+    ],
   },
   {
     title: "Data and State",
@@ -53,7 +65,13 @@ export const skillCategories: SkillCategory[] = [
       "GraphQL Code Generator",
       "Typed API integrations",
     ],
-    proof: ["Realink", "Jamloop", "Mojito Mint", "Coffee / Uniplato", "Dojeldi"],
+    proof: [
+      "Reolink",
+      "Jamloop",
+      "Mojito Mint",
+      "Coffee / Uniplato",
+      "Dojeldi",
+    ],
   },
   {
     title: "Authentication and Security",
@@ -75,7 +93,7 @@ export const skillCategories: SkillCategory[] = [
       "HSTS",
       "CORS",
     ],
-    proof: ["Realink", "Jamloop", "Mojito Mint", "I Read"],
+    proof: ["Reolink", "Jamloop", "Mojito Mint", "I Read"],
   },
   {
     title: "Testing and Quality",
@@ -92,7 +110,13 @@ export const skillCategories: SkillCategory[] = [
       "Codecov",
       "Storybook testing",
     ],
-    proof: ["Jamloop", "Realink", "Shop-Ware", "Mojito Mint", "TDD / Playwright Automation"],
+    proof: [
+      "Jamloop",
+      "Reolink",
+      "Shop-Ware",
+      "Mojito Mint",
+      "TDD / Playwright Automation",
+    ],
   },
   {
     title: "Build and Delivery",
@@ -113,14 +137,33 @@ export const skillCategories: SkillCategory[] = [
       "Heroku",
       "Semantic Release",
     ],
-    proof: ["Realink", "Jamloop", "Shop-Ware", "Mojito Mint", "Coffee / Uniplato", "Infrastructure as Code"],
+    proof: [
+      "Reolink",
+      "Jamloop",
+      "Shop-Ware",
+      "Mojito Mint",
+      "Coffee / Uniplato",
+    ],
   },
   {
     title: "Observability",
     intro:
       "Treats frontend monitoring as a product reliability tool rather than a post-release add-on.",
-    skills: ["Sentry", "Datadog", "Better Stack", "Pino", "PostHog", "New Relic"],
-    proof: ["Jamloop", "Realink", "Shop-Ware", "Mojito Mint", "Coffee / Uniplato"],
+    skills: [
+      "Sentry",
+      "Datadog",
+      "Better Stack",
+      "Pino",
+      "PostHog",
+      "New Relic",
+    ],
+    proof: [
+      "Jamloop",
+      "Reolink",
+      "Shop-Ware",
+      "Mojito Mint",
+      "Coffee / Uniplato",
+    ],
   },
   {
     title: "Full-stack and Infrastructure",
@@ -138,6 +181,6 @@ export const skillCategories: SkillCategory[] = [
       "PM2",
       "AWS S3",
     ],
-    proof: ["I Read", "Infrastructure as Code", "Realink", "Shop-Ware", "Mojito Mint"],
+    proof: ["I Read", "Reolink", "Shop-Ware", "Mojito Mint"],
   },
 ];
