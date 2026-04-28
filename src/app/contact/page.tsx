@@ -45,10 +45,10 @@ export default function ContactPage() {
                 <BriefcaseBusiness className="h-4 w-4" />
                 LinkedIn
               </Link>
-              <Link className="flex items-center gap-3 hover:text-foreground" href={portfolioLinks.resume} target="_blank">
+              <a className="flex items-center gap-3 hover:text-foreground" href={portfolioLinks.resume} rel="noreferrer" target="_blank">
                 <FileText className="h-4 w-4" />
                 Resume
-              </Link>
+              </a>
               <p className="flex items-center gap-3">
                 <MapPin className="h-4 w-4" />
                 {portfolioLinks.location}

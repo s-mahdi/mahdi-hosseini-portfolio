@@ -4,7 +4,9 @@ const siteName = "Mahdi Hosseini";
 const siteTitle = "Mahdi Hosseini | Senior Frontend Engineer";
 const siteDescription =
   "Senior Frontend Engineer specializing in React, Next.js, TypeScript, enterprise SaaS, authentication, design systems, testing, and CI/CD.";
-const siteUrl = "https://mahdi-hosseini.dev";
+const siteUrl =
+  process.env.NEXT_PUBLIC_SITE_URL ??
+  "https://s-mahdi.github.io/mahdi-hosseini-portfolio";
 
 type PageMetadataInput = {
   title: string;

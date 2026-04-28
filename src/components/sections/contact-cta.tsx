@@ -34,10 +34,10 @@ export function ContactCta() {
             </Link>
           </Button>
           <Button asChild variant="outline">
-            <Link href={portfolioLinks.resume} target="_blank">
+            <a href={portfolioLinks.resume} rel="noreferrer" target="_blank">
               <FileText className="h-4 w-4" />
               Resume
-            </Link>
+            </a>
           </Button>
           <Button asChild variant="outline">
             <Link href={portfolioLinks.github} target="_blank">

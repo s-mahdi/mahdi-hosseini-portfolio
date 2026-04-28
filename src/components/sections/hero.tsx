@@ -59,10 +59,10 @@ export function Hero() {
               </div>
               <div className="flex flex-wrap gap-3">
                 <Button asChild variant="ghost">
-                  <Link href={portfolioLinks.resume} target="_blank">
+                  <a href={portfolioLinks.resume} rel="noreferrer" target="_blank">
                     <FileText className="h-4 w-4" />
                     Resume
-                  </Link>
+                  </a>
                 </Button>
                 <Button asChild variant="ghost">
                   <Link href={portfolioLinks.github} rel="noreferrer" target="_blank">

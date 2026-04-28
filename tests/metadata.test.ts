@@ -12,7 +12,9 @@ describe("metadata helpers", () => {
 
     expect(metadata.title).toBe("Projects | Mahdi Hosseini");
     expect(metadata.description).toBe("Selected frontend engineering work.");
-    expect(metadata.openGraph?.url).toBe("https://mahdi-hosseini.dev/projects");
+    expect(metadata.openGraph?.url).toBe(
+      "https://s-mahdi.github.io/mahdi-hosseini-portfolio/projects",
+    );
   });
 
   it("builds case study metadata from project details", () => {

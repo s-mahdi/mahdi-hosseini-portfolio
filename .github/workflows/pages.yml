@@ -19,6 +19,10 @@ jobs:
   build:
     name: Build static site
     runs-on: ubuntu-latest
+    env:
+      GITHUB_PAGES: "true"
+      NEXT_PUBLIC_BASE_PATH: /mahdi-hosseini-portfolio
+      NEXT_PUBLIC_SITE_URL: https://s-mahdi.github.io/mahdi-hosseini-portfolio
     steps:
       - name: Checkout
         uses: actions/checkout@v4

@@ -7,7 +7,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint . --max-warnings=0 --ignore-pattern .next --ignore-pattern node_modules",
+    "lint": "eslint . --max-warnings=0 --ignore-pattern .next --ignore-pattern out --ignore-pattern node_modules",
     "test": "vitest run",
     "test:watch": "vitest",
     "typecheck": "tsc --noEmit"

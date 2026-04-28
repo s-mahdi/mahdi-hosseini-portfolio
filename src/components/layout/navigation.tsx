@@ -80,10 +80,10 @@ export function Navigation() {
             </Link>
           </Button>
           <Button asChild variant="outline">
-            <Link href={portfolioLinks.resume} target="_blank">
+            <a href={portfolioLinks.resume} rel="noreferrer" target="_blank">
               <FileText className="h-4 w-4" />
               Resume
-            </Link>
+            </a>
           </Button>
         </div>
         <div className="flex items-center gap-2 lg:hidden">
@@ -128,10 +128,10 @@ export function Navigation() {
                 </div>
                 <div className="grid gap-3">
                   <Button asChild variant="outline">
-                    <Link href={portfolioLinks.resume} target="_blank">
+                    <a href={portfolioLinks.resume} rel="noreferrer" target="_blank">
                       <FileText className="h-4 w-4" />
                       Resume
-                    </Link>
+                    </a>
                   </Button>
                   <Button asChild variant="outline">
                     <Link href={portfolioLinks.github} rel="noreferrer" target="_blank">
