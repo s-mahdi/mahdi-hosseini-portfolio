@@ -2,13 +2,8 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import {
-  BriefcaseBusiness,
-  CodeXml,
-  FileText,
-  Menu,
-  MoveUpRight,
-} from "lucide-react";
+import { FileText, Menu, MoveUpRight } from "lucide-react";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { useState } from "react";
 
 import { navItems, portfolioLinks } from "@/content/site";
@@ -38,8 +33,7 @@ export function Navigation() {
         </Link>
         <div className="hidden items-center gap-2 lg:flex">
           {navItems.map((item) => {
-            const active =
-              item.href === "/" ? pathname === "/" : pathname.startsWith(item.href);
+            const active = pathname.startsWith(item.href);
 
             return (
               <Link
@@ -66,7 +60,7 @@ export function Navigation() {
               rel="noreferrer"
               target="_blank"
             >
-              <CodeXml className="h-4 w-4" />
+              <FaGithub className="h-4 w-4" />
             </Link>
           </Button>
           <Button asChild size="icon" variant="outline">
@@ -76,7 +70,7 @@ export function Navigation() {
               rel="noreferrer"
               target="_blank"
             >
-              <BriefcaseBusiness className="h-4 w-4" />
+              <FaLinkedin className="h-4 w-4" />
             </Link>
           </Button>
           <Button asChild variant="outline">
@@ -128,14 +122,22 @@ export function Navigation() {
                 </div>
                 <div className="grid gap-3">
                   <Button asChild variant="outline">
-                    <a href={portfolioLinks.resume} rel="noreferrer" target="_blank">
+                    <a
+                      href={portfolioLinks.resume}
+                      rel="noreferrer"
+                      target="_blank"
+                    >
                       <FileText className="h-4 w-4" />
                       Resume
                     </a>
                   </Button>
                   <Button asChild variant="outline">
-                    <Link href={portfolioLinks.github} rel="noreferrer" target="_blank">
-                      <CodeXml className="h-4 w-4" />
+                    <Link
+                      href={portfolioLinks.github}
+                      rel="noreferrer"
+                      target="_blank"
+                    >
+                      <FaGithub className="h-4 w-4" />
                       GitHub
                     </Link>
                   </Button>
@@ -145,7 +147,7 @@ export function Navigation() {
                       rel="noreferrer"
                       target="_blank"
                     >
-                      <BriefcaseBusiness className="h-4 w-4" />
+                      <FaLinkedin className="h-4 w-4" />
                       LinkedIn
                     </Link>
                   </Button>

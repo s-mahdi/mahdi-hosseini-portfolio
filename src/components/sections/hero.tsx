@@ -1,11 +1,6 @@
 import Link from "next/link";
-import {
-  ArrowRight,
-  BriefcaseBusiness,
-  CodeXml,
-  FileText,
-  MapPin,
-} from "lucide-react";
+import { ArrowRight, FileText, MapPin } from "lucide-react";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 import { portfolioLinks } from "@/content/site";
 import { Button } from "@/components/ui/button";
@@ -66,13 +61,13 @@ export function Hero() {
                 </Button>
                 <Button asChild variant="ghost">
                   <Link href={portfolioLinks.github} rel="noreferrer" target="_blank">
-                    <CodeXml className="h-4 w-4" />
+                    <FaGithub className="h-4 w-4" />
                     GitHub
                   </Link>
                 </Button>
                 <Button asChild variant="ghost">
                   <Link href={portfolioLinks.linkedin} rel="noreferrer" target="_blank">
-                    <BriefcaseBusiness className="h-4 w-4" />
+                    <FaLinkedin className="h-4 w-4" />
                     LinkedIn
                   </Link>
                 </Button>

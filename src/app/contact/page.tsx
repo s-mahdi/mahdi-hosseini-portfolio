@@ -1,11 +1,6 @@
 import Link from "next/link";
-import {
-  BriefcaseBusiness,
-  CodeXml,
-  FileText,
-  Mail,
-  MapPin,
-} from "lucide-react";
+import { FileText, Mail, MapPin } from "lucide-react";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 import { buildPageMetadata } from "@/lib/metadata";
 import { portfolioLinks } from "@/content/site";
@@ -38,11 +33,11 @@ export default function ContactPage() {
                 {portfolioLinks.email}
               </Link>
               <Link className="flex items-center gap-3 hover:text-foreground" href={portfolioLinks.github} target="_blank">
-                <CodeXml className="h-4 w-4" />
+                <FaGithub className="h-4 w-4" />
                 GitHub
               </Link>
               <Link className="flex items-center gap-3 hover:text-foreground" href={portfolioLinks.linkedin} target="_blank">
-                <BriefcaseBusiness className="h-4 w-4" />
+                <FaLinkedin className="h-4 w-4" />
                 LinkedIn
               </Link>
               <a className="flex items-center gap-3 hover:text-foreground" href={portfolioLinks.resume} rel="noreferrer" target="_blank">

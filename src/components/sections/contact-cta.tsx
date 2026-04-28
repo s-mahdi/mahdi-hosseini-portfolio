@@ -1,10 +1,6 @@
 import Link from "next/link";
-import {
-  BriefcaseBusiness,
-  CodeXml,
-  FileText,
-  Mail,
-} from "lucide-react";
+import { FileText, Mail } from "lucide-react";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 import { portfolioLinks } from "@/content/site";
 import { Button } from "@/components/ui/button";
@@ -41,13 +37,13 @@ export function ContactCta() {
           </Button>
           <Button asChild variant="outline">
             <Link href={portfolioLinks.github} target="_blank">
-              <CodeXml className="h-4 w-4" />
+              <FaGithub className="h-4 w-4" />
               GitHub
             </Link>
           </Button>
           <Button asChild variant="outline">
             <Link href={portfolioLinks.linkedin} target="_blank">
-              <BriefcaseBusiness className="h-4 w-4" />
+              <FaLinkedin className="h-4 w-4" />
               LinkedIn
             </Link>
           </Button>

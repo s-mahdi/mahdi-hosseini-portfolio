@@ -1,4 +1,6 @@
 import Link from "next/link";
+import { Mail, MapPin, Briefcase } from "lucide-react";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 import { navItems, portfolioLinks } from "@/content/site";
 
@@ -12,19 +14,29 @@ export function Footer() {
             Senior Frontend Engineer focused on React, Next.js, TypeScript,
             secure product flows, and scalable enterprise SaaS interfaces.
           </p>
+          <div className="flex items-center gap-1.5 text-sm text-muted-foreground">
+            <MapPin className="h-3.5 w-3.5 shrink-0" />
+            <span>{portfolioLinks.location}</span>
+          </div>
+          <div className="flex items-center gap-1.5 text-sm text-muted-foreground">
+            <Briefcase className="h-3.5 w-3.5 shrink-0" />
+            <span>Open to remote US &amp; EU roles</span>
+          </div>
         </div>
         <div className="space-y-3 text-sm text-muted-foreground">
           <p className="font-medium text-foreground">Contact</p>
-          <Link className="block hover:text-foreground" href={`mailto:${portfolioLinks.email}`}>
+          <Link className="flex items-center gap-2 hover:text-foreground" href={`mailto:${portfolioLinks.email}`}>
+            <Mail className="h-3.5 w-3.5 shrink-0" />
             {portfolioLinks.email}
           </Link>
-          <Link className="block hover:text-foreground" href={portfolioLinks.github} target="_blank">
+          <Link className="flex items-center gap-2 hover:text-foreground" href={portfolioLinks.github} target="_blank">
+            <FaGithub className="h-3.5 w-3.5 shrink-0" />
             GitHub
           </Link>
-          <Link className="block hover:text-foreground" href={portfolioLinks.linkedin} target="_blank">
+          <Link className="flex items-center gap-2 hover:text-foreground" href={portfolioLinks.linkedin} target="_blank">
+            <FaLinkedin className="h-3.5 w-3.5 shrink-0" />
             LinkedIn
           </Link>
-          <p>{portfolioLinks.location}</p>
         </div>
         <div className="space-y-3 text-sm text-muted-foreground">
           <p className="font-medium text-foreground">Navigate</p>
