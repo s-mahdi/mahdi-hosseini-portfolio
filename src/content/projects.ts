@@ -3,12 +3,13 @@ import type { Project } from "@/content/types";
 export const projects: Project[] = [
   {
     slug: "reolink",
-    name: "Reolink",
+    name: "Realink",
+    company: "Neoxi",
     role: "Senior Frontend Engineer",
     period: "2024 to present",
     domain: "Enterprise SaaS / Security",
     description:
-      "Secure cloud and marketing monorepo work spanning auth, localization, shared packages, and multi-app Next.js delivery.",
+      "Secure cloud and marketing monorepo work for Realink spanning auth, localization, shared packages, and multi-app Next.js delivery.",
     stack: ["Next.js 15", "React 19", "TypeScript", "Ory Kratos", "Turborepo"],
     keyOutcomes: ["Reduced duplicated configuration by 60%", "Built 2 Next.js apps and 7 shared packages"],
     tags: ["Frontend Architecture", "Next.js", "React", "Authentication", "CI/CD", "Infrastructure"],
@@ -16,7 +17,8 @@ export const projects: Project[] = [
   },
   {
     slug: "jamloop",
-    name: "JamLoop",
+    name: "Jamloop",
+    company: "Neoxi",
     role: "Senior Frontend Engineer",
     period: "2024",
     domain: "Ad-tech SaaS",
@@ -43,6 +45,7 @@ export const projects: Project[] = [
   {
     slug: "mojito-mint",
     name: "Mojito Mint",
+    company: "Neoxi",
     role: "Frontend Engineer",
     period: "2022",
     domain: "Web3 / Marketplace",

@@ -26,6 +26,9 @@ export function CaseStudyCard({
             <h3 className="font-heading text-2xl tracking-tight text-foreground">
               {study.name}
             </h3>
+            <p className="text-sm font-semibold text-foreground">
+              Company: {study.company}
+            </p>
             <p className="text-sm font-medium text-foreground">{study.domain}</p>
             <p className="text-pretty text-sm leading-6 text-muted-foreground">
               {study.summary}

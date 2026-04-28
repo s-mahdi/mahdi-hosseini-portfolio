@@ -5,7 +5,7 @@ import { SectionHeading } from "@/components/sections/section-heading";
 export const metadata = buildPageMetadata({
   title: "Experience",
   description:
-    "Experience timeline across Reolink, Shop-Ware, Coffee, Satek, and earlier work.",
+    "Experience timeline across Neoxi, Shop-Ware, Coffee, Satek, and earlier work.",
   path: "/experience",
 });
 

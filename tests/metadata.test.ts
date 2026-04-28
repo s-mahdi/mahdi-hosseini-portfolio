@@ -17,12 +17,12 @@ describe("metadata helpers", () => {
 
   it("builds case study metadata from project details", () => {
     const metadata = buildCaseStudyMetadata({
-      name: "JamLoop",
+      name: "Jamloop",
       summary: "Self-service ad-tech platform case study.",
       slug: "jamloop",
     });
 
-    expect(metadata.title).toBe("JamLoop Case Study | Mahdi Hosseini");
+    expect(metadata.title).toBe("Jamloop Case Study | Mahdi Hosseini");
     expect(metadata.description).toContain("Self-service ad-tech platform");
     expect(metadata.twitter).toEqual(
       expect.objectContaining({ card: "summary_large_image" }),

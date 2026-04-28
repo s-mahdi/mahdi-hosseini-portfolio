@@ -12,14 +12,14 @@ export const featuredCaseStudySlugs = [
 export const caseStudies: CaseStudy[] = [
   {
     slug: "reolink-neoxi",
-    name: "Reolink / Neoxi",
-    company: "Neoxi for Reolink",
+    name: "Realink",
+    company: "Neoxi",
     role: "Senior Frontend Engineer",
     period: "2024 to present",
     productType: "Secure cloud platform and marketing/cloud monorepo",
     domain: "Enterprise SaaS / Security",
     summary:
-      "Built and standardized a secure Next.js 15 monorepo that supports Reolink cloud and marketing surfaces with shared packages, localization, and modern authentication flows.",
+      "Built and standardized a secure Next.js 15 monorepo that supports Realink cloud and marketing surfaces with shared packages, localization, and modern authentication flows.",
     stack: [
       "Next.js 15",
       "React 19",
@@ -71,7 +71,7 @@ export const caseStudies: CaseStudy[] = [
       context: {
         title: "Context",
         body: [
-          "Reolink needed a frontend platform that could support both cloud product surfaces and marketing experiences without fragmenting implementation patterns across teams.",
+          "Realink needed a frontend platform that could support both cloud product surfaces and marketing experiences without fragmenting implementation patterns across teams.",
           "The work sat at the intersection of product delivery, platform consistency, localization, and authentication hardening.",
         ],
       },
@@ -141,8 +141,8 @@ export const caseStudies: CaseStudy[] = [
   },
   {
     slug: "jamloop",
-    name: "JamLoop",
-    company: "JamLoop",
+    name: "Jamloop",
+    company: "Neoxi",
     role: "Senior Frontend Engineer",
     period: "2024",
     productType: "Self-service ad-tech platform",
@@ -198,7 +198,7 @@ export const caseStudies: CaseStudy[] = [
       ],
     },
     sections: {
-      context: { title: "Context", body: ["JamLoop needed a reliable self-service frontend that supported advertiser workflows, analytics views, and reporting without relying on heavy manual QA.", "The product had to move fast, but the team also needed stronger release confidence than a typical startup-style shipping loop provides."] },
+      context: { title: "Context", body: ["Jamloop needed a reliable self-service frontend that supported advertiser workflows, analytics views, and reporting without relying on heavy manual QA.", "The product had to move fast, but the team also needed stronger release confidence than a typical startup-style shipping loop provides."] },
       challenge: { title: "Challenge", body: ["The main challenge was to make the platform easier to extend while keeping the cost of mistakes low in a data-heavy domain.", "That meant tightening types, validation, testing, and observability in parallel rather than treating them as separate initiatives."] },
       role: { title: "My role", body: ["I shaped the frontend implementation patterns around typed APIs, forms, Storybook-driven UI work, and CI quality gates.", "I also helped make production issues easier to detect and faster to triage through better logging and monitoring integration."] },
       technicalDecisions: { title: "Technical decisions", body: ["Used Clerk for auth, Zod plus React Hook Form for predictable validation, and a typed API boundary to keep feature work from drifting into weakly typed ad-hoc integrations.", "Added Storybook, Vitest, Playwright, Codecov, and semantic release conventions so teams could ship frequently without guessing about quality."] },
@@ -285,7 +285,7 @@ export const caseStudies: CaseStudy[] = [
   {
     slug: "mojito-mint",
     name: "Mojito Mint",
-    company: "Mojito Mint",
+    company: "Neoxi",
     role: "Frontend Engineer",
     period: "2022",
     productType: "NFT marketplace management platform",

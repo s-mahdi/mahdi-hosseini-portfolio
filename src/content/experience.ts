@@ -2,12 +2,12 @@ import type { ExperienceEntry } from "@/content/types";
 
 export const experience: ExperienceEntry[] = [
   {
-    company: "Neoxi / Reolink",
+    company: "Neoxi",
     role: "Senior Frontend Engineer",
     period: "2024 to present",
     location: "Remote",
     stack: ["Next.js 15", "React 19", "TypeScript", "Ory Kratos", "Turborepo"],
-    outcomes: ["Reduced duplicated configuration by 60%", "Cut build feedback loops by 30%"],
+    outcomes: ["Implemented Realink, Jamloop, and Mojito Mint project surfaces", "Reduced duplicated configuration by 60%"],
     caseStudySlug: "reolink-neoxi",
   },
   {

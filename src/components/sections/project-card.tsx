@@ -19,6 +19,11 @@ export function ProjectCard({ project }: { project: Project }) {
           <h3 className="font-heading text-2xl tracking-tight text-foreground">
             {project.name}
           </h3>
+          {project.company ? (
+            <p className="text-sm font-semibold text-foreground">
+              Company: {project.company}
+            </p>
+          ) : null}
           <p className="text-sm font-medium text-foreground">{project.domain}</p>
           <p className="text-sm leading-6 text-muted-foreground">
             {project.description}

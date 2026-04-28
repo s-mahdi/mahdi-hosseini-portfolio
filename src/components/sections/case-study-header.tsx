@@ -17,6 +17,9 @@ export function CaseStudyHeader({ study }: { study: CaseStudy }) {
           <h1 className="max-w-4xl text-balance font-heading text-4xl tracking-tight text-foreground sm:text-5xl">
             {study.name}
           </h1>
+          <p className="text-sm font-semibold uppercase tracking-[0.22em] text-foreground">
+            Company: {study.company}
+          </p>
           <p className="max-w-3xl text-pretty text-lg leading-8 text-muted-foreground">
             {study.summary}
           </p>

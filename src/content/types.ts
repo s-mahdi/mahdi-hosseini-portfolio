@@ -76,6 +76,7 @@ export type CaseStudy = {
 export type Project = {
   slug: string;
   name: string;
+  company?: string;
   role: string;
   period: string;
   domain: string;
