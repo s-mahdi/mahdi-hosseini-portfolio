@@ -1,6 +1,7 @@
 node_modules/
 .next/
 coverage/
+out/
 .DS_Store
 tsconfig.tsbuildinfo
 .codex/
