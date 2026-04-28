@@ -1,10 +1,9 @@
 "use client";
 
 import Link from "next/link";
-import { usePathname } from "next/navigation";
 import { FileText, Menu, MoveUpRight } from "lucide-react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 import { navItems, portfolioLinks } from "@/content/site";
 import { cn } from "@/lib/utils";
@@ -13,43 +12,50 @@ import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { ThemeToggle } from "@/components/layout/theme-toggle";
 
 export function Navigation() {
-  const pathname = usePathname();
   const [open, setOpen] = useState(false);
+  const [hidden, setHidden] = useState(false);
+  const lastY = useRef(0);
+
+  useEffect(() => {
+    const onScroll = () => {
+      const y = window.scrollY;
+      setHidden(y > lastY.current && y > 80);
+      lastY.current = y;
+    };
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
 
   return (
-    <header className="sticky top-0 z-50 border-b border-border/70 bg-background/85 backdrop-blur-xl">
+    <header
+      className={cn(
+        "fixed top-0 left-0 right-0 z-50 border-b border-border/70 bg-background/85 backdrop-blur-xl transition-transform duration-300",
+        hidden ? "-translate-y-full" : "translate-y-0",
+      )}
+    >
       <nav
         aria-label="Primary"
         className="container flex h-16 items-center justify-between gap-4"
       >
-        <Link
+        <a
           className="flex items-center gap-3 text-sm font-medium tracking-[0.2em] text-foreground uppercase"
-          href="/"
+          href="#"
         >
           <span className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-border bg-muted/60 text-xs font-semibold">
             MH
           </span>
           <span className="hidden sm:inline">Mahdi Hosseini</span>
-        </Link>
+        </a>
         <div className="hidden items-center gap-2 lg:flex">
-          {navItems.map((item) => {
-            const active = pathname.startsWith(item.href);
-
-            return (
-              <Link
-                className={cn(
-                  "rounded-full px-4 py-2 text-sm transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background",
-                  active
-                    ? "bg-muted text-foreground"
-                    : "text-muted-foreground hover:bg-accent hover:text-foreground",
-                )}
-                href={item.href}
-                key={item.href}
-              >
-                {item.label}
-              </Link>
-            );
-          })}
+          {navItems.map((item) => (
+            <a
+              className="rounded-full px-4 py-2 text-sm text-muted-foreground transition-colors hover:bg-accent hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background"
+              href={item.href}
+              key={item.href}
+            >
+              {item.label}
+            </a>
+          ))}
         </div>
         <div className="hidden items-center gap-2 lg:flex">
           <ThemeToggle />
@@ -95,29 +101,17 @@ export function Navigation() {
                     Navigation
                   </p>
                   <div className="mt-4 grid gap-2">
-                    {navItems.map((item) => {
-                      const active =
-                        item.href === "/"
-                          ? pathname === "/"
-                          : pathname.startsWith(item.href);
-
-                      return (
-                        <Link
-                          className={cn(
-                            "flex items-center justify-between rounded-2xl border border-transparent px-4 py-3 text-sm transition-colors",
-                            active
-                              ? "border-border bg-muted text-foreground"
-                              : "text-muted-foreground hover:border-border hover:bg-muted/60 hover:text-foreground",
-                          )}
-                          href={item.href}
-                          key={item.href}
-                          onClick={() => setOpen(false)}
-                        >
-                          {item.label}
-                          <MoveUpRight className="h-4 w-4" />
-                        </Link>
-                      );
-                    })}
+                    {navItems.map((item) => (
+                      <a
+                        className="flex items-center justify-between rounded-2xl border border-transparent px-4 py-3 text-sm text-muted-foreground transition-colors hover:border-border hover:bg-muted/60 hover:text-foreground"
+                        href={item.href}
+                        key={item.href}
+                        onClick={() => setOpen(false)}
+                      >
+                        {item.label}
+                        <MoveUpRight className="h-4 w-4" />
+                      </a>
+                    ))}
                   </div>
                 </div>
                 <div className="grid gap-3">
