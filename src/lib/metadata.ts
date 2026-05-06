@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
 
-const siteName = "Mahdi Hosseini";
-const siteTitle = "Mahdi Hosseini | Senior Frontend Engineer";
+const siteName = "Matt Hosseini";
+const siteTitle = "Matt Hosseini | Senior Frontend Engineer";
 const siteDescription =
   "Senior Frontend Engineer specializing in React, Next.js, TypeScript, enterprise SaaS, authentication, design systems, testing, and CI/CD.";
 const siteUrl =
   process.env.NEXT_PUBLIC_SITE_URL ??
-  "https://s-mahdi.github.io/mahdi-hosseini-portfolio";
+  "https://matt-hosseini-dev.github.io/matt-hosseini-portfolio";
 
 type PageMetadataInput = {
   title: string;
