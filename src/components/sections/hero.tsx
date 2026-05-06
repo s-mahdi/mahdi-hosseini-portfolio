@@ -113,7 +113,7 @@ export function Hero() {
           </div>
 
           <h1 className="mb-6 font-heading text-5xl tracking-tight text-foreground sm:text-6xl lg:text-7xl">
-            Mahdi{" "}
+            Matt{" "}
             <span className="text-sky-400">Hosseini</span>
           </h1>
 
