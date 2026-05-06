@@ -3,10 +3,10 @@ import type { Metric, PortfolioLinks } from "@/content/types";
 const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
 
 export const portfolioLinks: PortfolioLinks = {
-  email: "mahdi.hoseini.dev@gmail.com",
-  github: "https://github.com/s-mahdi",
-  linkedin: "https://www.linkedin.com/in/mahdi--dev/",
-  resume: `${basePath}/docs/Mahdi-Hoseini-Resume.pdf`,
+  email: "matt.hosseini.dev@gmail.com",
+  github: "https://github.com/matt-hosseini-dev",
+  linkedin: "https://www.linkedin.com/in/matt--dev/",
+  resume: `${basePath}/docs/Matt-Hosseini-Resume.pdf`,
   location: "Yerevan, Armenia",
   availability:
     "Available for senior frontend and product-minded platform roles across remote US and EU teams.",
