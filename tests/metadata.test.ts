@@ -10,10 +10,10 @@ describe("metadata helpers", () => {
       path: "/projects",
     });
 
-    expect(metadata.title).toBe("Projects | Mahdi Hosseini");
+    expect(metadata.title).toBe("Projects | Matt Hosseini");
     expect(metadata.description).toBe("Selected frontend engineering work.");
     expect(metadata.openGraph?.url).toBe(
-      "https://s-mahdi.github.io/mahdi-hosseini-portfolio/projects",
+      "https://matt-hosseini-dev.github.io/matt-hosseini-portfolio/projects",
     );
   });
 
@@ -24,7 +24,7 @@ describe("metadata helpers", () => {
       slug: "jamloop",
     });
 
-    expect(metadata.title).toBe("Jamloop Case Study | Mahdi Hosseini");
+    expect(metadata.title).toBe("Jamloop Case Study | Matt Hosseini");
     expect(metadata.description).toContain("Self-service ad-tech platform");
     expect(metadata.twitter).toEqual(
       expect.objectContaining({ card: "summary_large_image" }),
