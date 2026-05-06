@@ -9,7 +9,7 @@ export function Footer() {
     <footer className="border-t border-border/70 py-10">
       <div className="container grid gap-8 md:grid-cols-[1.4fr_1fr_1fr]">
         <div className="space-y-3">
-          <p className="text-lg font-semibold text-foreground">Mahdi Hosseini</p>
+          <p className="text-lg font-semibold text-foreground">Matt Hosseini</p>
           <p className="max-w-md text-sm text-muted-foreground">
             Senior Frontend Engineer focused on React, Next.js, TypeScript,
             secure product flows, and scalable enterprise SaaS interfaces.
@@ -50,7 +50,7 @@ export function Footer() {
         </div>
       </div>
       <div className="container mt-8 text-xs text-muted-foreground">
-        <p>© {new Date().getFullYear()} Mahdi Hosseini. All rights reserved.</p>
+        <p>© {new Date().getFullYear()} Matt Hosseini. All rights reserved.</p>
       </div>
     </footer>
   );
