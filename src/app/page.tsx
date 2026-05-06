@@ -164,7 +164,7 @@ export default function HomePage() {
               <Card className="p-6">
                 <div className="space-y-4 text-sm leading-7 text-muted-foreground">
                   <p>
-                    Mahdi Hosseini is a senior frontend engineer focused on React,
+                    Matt Hosseini is a senior frontend engineer focused on React,
                     Next.js, and TypeScript for enterprise SaaS products. His work
                     sits where interface quality, system architecture, and delivery
                     reliability meet.
